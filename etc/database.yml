@@ -1,0 +1,22 @@
+# pgsql数据库配置
+#database:
+#  db_type: 'postgres'
+#  host: '127.0.0.1'
+#  port: 5432
+#  username: 'postgres'
+#  password: 'test'
+#  db_name: 'duallinks'
+
+# mysql数据库配置
+database:
+  db_type: 'mysql'
+  host: '127.0.0.1'
+  port: 3306
+  username: 'root'
+  password: 'test'
+  db_name: 'duallinks'
+
+# 连接池连接尚未验证完全，暂勿使用连接池
+dj_db_conn_pool:
+  is_use_pool: False # False-不使用连接池 True-使用连接池
+  pool_options: {max_overflow: 10 ,pool_size: 10}
